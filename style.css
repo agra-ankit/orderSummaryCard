@@ -1,0 +1,192 @@
+:root {
+  /* Colors */
+
+  /* Primary */
+  --clr-blue-100: hsl(225, 100%, 94%);
+  --clr-blue-700: hsl(245, 75%, 52%);
+
+  /* Neutral */
+  --clr-blue-50: hsl(225, 100%, 98%);
+  --clr-gray-600: hsl(224, 23%, 55%);
+  --clr-blue-950: hsl(223, 47%, 23%);
+
+  /* Typography */
+  --ff-primary: "Red Hat Display", sans-serif;
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  --fs-body: 1rem; /* 16px */
+}
+*{
+  box-sizing:border-box;
+  padding: 0;
+  margin: 0;
+
+}
+body{
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+}
+.container{
+  min-height:100vh;
+  background-color: var(--clr-blue-100);
+  background-image: url('images/pattern-background-mobile.svg');
+  background-image:no-repeat;
+  background-position: top;
+  background-size: 100% auto;
+  padding:1rem 0.9rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  width:100%;
+  max-width:24rem;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+
+
+}
+.bottom-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1.0rem;
+  padding:2rem 1.5rem 2rem;
+}
+.hero-img{
+  width:100%;
+  
+}
+.card-info-section{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.h1{
+  font-weight: var(--fw-black);
+  color: var(--clr-blue-950);
+  font-size: 1.5rem;
+  font-weight: var(--fw-black);
+ 
+  
+}
+.card-info-section p{
+  color:var(--clr-gray-600);
+  font-weight:var(--fw-bold);
+  line-height: 1.7;
+}
+.music-icon{
+
+  margin-right: 1rem;
+}
+.leftPlan{
+  display: flex;
+  align-items: center;
+
+}
+
+.card-plan-details{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--clr-blue-50);
+  border-radius: 0.7rem;
+  padding: 0.7rem 0;
+
+  font-size: 0.78rem;
+
+}
+
+
+.annual-plan{
+  
+  color: var(--clr-blue-950);
+  font-weight: var(--fw-black);
+
+}
+.plan-price-detail .price{
+  color: var(--clr-gray-600);
+  font-weight: var(--fw-bold);
+  
+}
+.change-link{
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+  color: var(--clr-blue-700);
+ 
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+}
+.payment-button{
+  padding: 1em;
+  background-color:var(--clr-blue-700);
+  border-radius: 0.7rem;
+  color: white;
+  font-weight:var(--fw-bold);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 9px 20px rgba(56, 41, 224, 0.2); 
+}
+.cancel-order-button{
+  padding: 1.2em;
+  background-color: white;
+  border-radius: 0.7rem;
+  color:var(--clr-gray-600);
+  border-width: 0;
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+  
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--clr-blue-50);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media(min-width:768px){
+  .card-plan-details{
+    font-size:1rem;
+  }
+  .container{
+    background-image: url('images/pattern-background-desktop.svg');
+  }
+}
+.change-link a {
+  /* ... your existing styles (if any) ... */
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.payment-button {
+  /* ... your existing styles ... */
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.cancel-order-button {
+  /* ... your existing styles ... */
+  transition: color 0.2s ease;
+}
+/* Lightens the link and removes the underline */
+.change-link a:hover {
+  opacity: 0.7;
+  text-decoration: none; 
+}
+
+/* Lightens the primary button background */
+.payment-button:hover {
+  opacity: 0.8; 
+}
+
+/* Darkens the text of the cancel button */
+.cancel-order-button:hover {
+  color: var(--clr-blue-950);
+}
