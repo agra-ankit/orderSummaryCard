@@ -70,7 +70,7 @@ body{
   font-weight: var(--fw-black);
   color: var(--clr-blue-950);
   font-size: 1.5rem;
-  font-weight: var(--fw-black);
+
  
   
 }
@@ -132,6 +132,7 @@ body{
   cursor: pointer;
   border: none;
   box-shadow: 0 9px 20px rgba(56, 41, 224, 0.2); 
+  transition: opacity 0.2s ease, background-color 0.2s ease;
 }
 .cancel-order-button{
   padding: 1.2em;
@@ -141,6 +142,7 @@ body{
   border-width: 0;
   font-weight: var(--fw-bold);
   cursor: pointer;
+    transition: color 0.2s ease;
   
 }
 
@@ -153,7 +155,7 @@ body{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@media(min-width:768px){
+@media(min-width:48rem){
   .card-plan-details{
     font-size:1rem;
   }
@@ -166,15 +168,6 @@ body{
   transition: opacity 0.2s ease, color 0.2s ease;
 }
 
-.payment-button {
-  /* ... your existing styles ... */
-  transition: opacity 0.2s ease, background-color 0.2s ease;
-}
-
-.cancel-order-button {
-  /* ... your existing styles ... */
-  transition: color 0.2s ease;
-}
 /* Lightens the link and removes the underline */
 .change-link a:hover {
   opacity: 0.7;
