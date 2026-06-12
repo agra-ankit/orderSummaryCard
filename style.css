@@ -177,7 +177,7 @@ body{
 
 /* Lightens the primary button background */
 .payment-button:hover {
-  opacity: 0.8; 
+  opacity: 0.7; 
 }
 
 /* Darkens the text of the cancel button */
