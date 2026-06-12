@@ -30,12 +30,13 @@ body{
   font-size: 1rem;
 }
 .container{
+  border: 1px solid black;
   min-height:100vh;
   background-color: var(--clr-blue-100);
-  background-image: url('images/pattern-background-mobile.svg');
-  background-image:no-repeat;
-  background-position: top;
+  background-image: url("images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
   background-size: 100% auto;
+
   padding:1rem 0.9rem 1rem;
   display: flex;
   align-items: center;
